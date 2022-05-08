@@ -1,4 +1,3 @@
-// 管理城市-景点 管理员才能进入
 import React from 'react';
 import {Row} from 'antd';
 
