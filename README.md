@@ -1,24 +1,32 @@
-### `npm start`
+### 项目运行，http://localhost:3003/ `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 执行脚本 `npm test`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 打包项目 `npm run build`
 
 ### 暴露node_modules `npm run eject`
+
+### 项目目录架构
+├── config   // 配置相关   
+├── script   // 构建脚本 
+├── public   // 应用对外目录 
+├── src      // 源代码 
+│   ├── components  // 公共组件
+│   ├── font        // 字体相关
+│   ├── js          // js库
+│   ├── router      // 路由相关
+        ├── IndexRouter //管理路由
+│   ├── scss        // 样式表
+│   ├── store       // redux相关
+│   ├── views       // 页面应用
+        ├── introduce //介绍我们
+        ├── login //登录路由
+        ├── sandbox //子路由，左侧菜单对应展示页面
+            ├── city-view-manager //管理城市-景点数据
+            ├── interpreter-manager //管理讲解器数据
+            ├── right-manage //管理权限角色
+            ├── user-manager //管理用户、用户信息
+│   ├── index.js    // 入口文件
+│   ├── Page.js     // 页面路由入口
+│   ├── App.js      // 主应用入口
+

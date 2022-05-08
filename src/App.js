@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter as Router, useRoutes } from 'react-router-dom';
+import IndexRouter from './router/IndexRouter';
 function App() {
+  const GetRoutes = () => useRoutes(IndexRouter); //一定要是函数内
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GetRoutes />
+    </Router>
   );
 }
-
 export default App;
